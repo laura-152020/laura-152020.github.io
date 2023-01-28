@@ -1,0 +1,10 @@
+body{
+    margin : 10;
+    padding: 10;
+    background : url("imagenes/coffe1.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
