@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      section {
+        display: none;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #4caf6a;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button onclick="showSection('section1')">Sección 1</button>
+      <button onclick="showSection('section2')">Sección 2</button>
+      <button onclick="showSection('section3')">Sección 3</button>
+    </div>
+    <section id="section1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, ipsum eu euismod tincidunt, velit metus vestibulum quam, non bibendum sem lectus ut risus.
+    </section>
+    <section id="section2">
+      Nulla efficitur ex in tellus tempor, ut viverra odio dictum. Sed sollicitudin tellus vel metus pellentesque, a congue libero auctor.
+    </section>
+    <section id="section3">
+      Aliquam bibendum, odio vitae viverra tincidunt, justo est posuere magna, in pharetra enim velit vel ante.
+    </section>
+
+    <script>
+      function showSection(sectionId) {
+        var sections = document.getElementsByTagName("section");
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].style.display = "none";
+        }
+        document.getElementById(sectionId).style.display = "block";
+      }
+      showSection("section1");
+    </script>
+  </body>
+</html>
