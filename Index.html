@@ -1,47 +1,62 @@
-<!DOCTYPE html>
 <html>
   <head>
     <style>
-      section {
-        display: none;
-        padding: 20px;
-        border: 1px solid #ccc;
-      }
       button {
-        padding: 10px 20px;
         margin: 10px;
-        background-color: #4caf6a;
-        color: white;
+        padding: 10px 20px;
+        background-color: lightgray;
         border: none;
+        border-radius: 5px;
         cursor: pointer;
+      }
+
+      .selected {
+        background-color: blue;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <div>
-      <button onclick="showSection('section1')">Sección 1</button>
-      <button onclick="showSection('section2')">Sección 2</button>
-      <button onclick="showSection('section3')">Sección 3</button>
+    <div style="text-align: center;">
+      <button id="btn1">Sección 1</button>
+      <button id="btn2">Sección 2</button>
+      <button id="btn3">Sección 3</button>
+      <button id="btn4">Sección 4</button>
+      <button id="btn5">Sección 5</button>
+      <button id="btn6">Sección 6</button>
     </div>
-    <section id="section1">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, ipsum eu euismod tincidunt, velit metus vestibulum quam, non bibendum sem lectus ut risus.
-    </section>
-    <section id="section2">
-      Nulla efficitur ex in tellus tempor, ut viverra odio dictum. Sed sollicitudin tellus vel metus pellentesque, a congue libero auctor.
-    </section>
-    <section id="section3">
-      Aliquam bibendum, odio vitae viverra tincidunt, justo est posuere magna, in pharetra enim velit vel ante.
-    </section>
+    <div id="section1" style="display: none;">
+      <p>Texto aleatorio para la sección 1</p>
+    </div>
+    <div id="section2" style="display: none;">
+      <p>Texto aleatorio para la sección 2</p>
+    </div>
+    <div id="section3" style="display: none;">
+      <p>Texto aleatorio para la sección 3</p>
+    </div>
+    <div id="section4" style="display: none;">
+      <p>Texto aleatorio para la sección 4</p>
+    </div>
+    <div id="section5" style="display: none;">
+      <p>Texto aleatorio para la sección 5</p>
+    </div>
+    <div id="section6" style="display: none;">
+      <p>Texto aleatorio para la sección 6</p>
+    </div>
 
     <script>
-      function showSection(sectionId) {
-        var sections = document.getElementsByTagName("section");
-        for (var i = 0; i < sections.length; i++) {
-          sections[i].style.display = "none";
-        }
-        document.getElementById(sectionId).style.display = "block";
-      }
-      showSection("section1");
+      const buttons = document.querySelectorAll("button");
+      const sections = document.querySelectorAll("div[id^='section']");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const id = button.id.slice(-1);
+          buttons.forEach((btn) => btn.classList.remove("selected"));
+          button.classList.add("selected");
+          sections.forEach((section) => section.style.display = "none");
+          document.getElementById(`section${id}`).style.display = "block";
+        });
+      });
     </script>
   </body>
 </html>
