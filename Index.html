@@ -4,40 +4,41 @@
   <title>MONSTRUO ENERGY</title>
   <!-- Asociacion con documento CSS-->
   <link rel="stylesheet" href=style.css>
-  <!--Icono-->
-  <link rel="icon" href="imagenes/icon.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+  
+  <!--Icono--> 
+  <link rel="icon" href="imagenes/icon.gif">
 </head>
-
-
-</head>
-
 <body>
+
   <!-- Asociacion con socumento JS-->
   <script src="main.js"></script>
   <!--Barra de navegacion-->
   <header>
     <a href="#" class="logo">
-      <img src="imagenes/logo1.png" alt="" height="70">
+      <img src="imagenes/icon.gif" alt="" height="70">
     </a>
     <!-- Menu Icon-->
     <a href="#" class="menu">
       <img src="imagenes/menu-regular-24.png " alt="">
     </a>
-
     <!--Links -->
     <ul class="navbar">
-      <li><a href="#Home" id="HomeBtn">Home</a>
+      <li><a href="#Home" id="HomeBtn">Inicio</a>
       </li>
       <li><a href="#About " id="AcercaBtn">Acerca de</a>
       </li>
       <li><a href="#Services" id="ServiciosBtn">Servicios</a>
       </li>
-      <li><a href="#Contacts" id="ContactosBtn">Contacto</a>
+      <li><a href="#Contacts" id="ContactosBtn">Contacto</a>  
       </li>
       <li><a href="#Blog" id="BlogBtn">Blog</a>
+      </li> 
+      <li><a href="#Customers" id="ClientesBtn">Clientes</a>
       </li>
-      
-      <li><a href="#Customers" id="ClientesBtn">Clientes</a></li>
     </ul>
     <!-- Icon-->
     <div class="header-icon">
@@ -91,8 +92,7 @@
         fans.
       </p>
       <p>Es un estilo de vida!
-      </p>
-    
+      </p> 
     </div>
     </div>
   </section>
@@ -148,18 +148,27 @@
         <div class="content">
           <span>$25</span>
           <a href="#">Add to cart</a>
-        </div>
+        </div>   
   </section>
-  <section class="Contacto">
-    <div class="heading">
-  <div id= "contacto-text"></div>
-        <div id = "centro3">
-          <h2>
-            <em class = "encabezados t1">Nuestros</em>
-            <em class = "encabezados t1">Clientes</em>
-          </h2>
-        </div>
-      </div>
+
+  <section class="Contacto" >
+    <div class = "contacto-form">
+      <h1>Contactanos</h1>
+      <p>I'am available for freelance work. Connect with me via phone: 01646895741
+        or email: admin@example.com</p>
+        <from action = "">
+          <input type = "" placeholder=" Nombre " required >
+          <input type = "email" name = "email" id = "" placeholder="E-mail" required>
+          <input type = "" placeholder = "Direccion" required>
+          <textarea name = "" id = "" cols = "30" rows ="10" placeholder="Tu mensaje" required>
+          </textarea>
+          <input type = "Entregar" name = "" value= "Entregar" class = "btn">
+        </from>
+    </div>
+    <div class = "contacto-img">
+      <img src = "imagenes/logomonster.png">
+    </div>
+    </section>
 </body>
 
 </html>
