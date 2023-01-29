@@ -5,73 +5,58 @@
   <!-- Asociacion con documento CSS-->
   <link rel="stylesheet" href=style.css>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
   <!--Icono-->
-  <link rel="icon" href="imagenes/icon.gif">
+  <link rel="icon" href="imagenes/icon.gif" />
 </head>
+
 
 <body>
   <!--Barra de navegacion-->
-  <header>
-    <a href="#" class="logo">
-      <img src="imagenes/logo1.png" alt="" height="70">
-    </a>
-    <!-- Menu Icon-->
-    <a href="#" class="menu">
-      <img src="imagenes/menu-regular-24.png " alt="">
-    </a>
-    <!--Links -->
+  <header><a href="#" class="logo"><img src="imagenes/logo1.png" alt="" height="70"></a>
     <ul class="navbar">
-      <li><a href="#Home" id="HomeBtn">Inicio</a>
-      </li>
-      <li><a href="#About " id="AcercaBtn">Acerca de</a>
-      </li>
-      <li><a href="#Services" id="ServiciosBtn">Servicios</a>
-      </li>
-      <li><a href="#Contacts" id="ContactosBtn">Contacto</a>
-      </li>
-      <li><a href="#Blog" id="BlogBtn">Blog</a>
-      </li>
-      <li><a href="#Customers" id="ClientesBtn">Clientes</a>
-      </li>
+      <li><a href="#Home" id="HomeBtn">Inicio</a></li>
+      <li><a href="#About" id="AcercaBtn">Acerca de</a></li>
+      <li><a href="#Services" id="ServiciosBtn">Servicios</a></li>
+      <li><a href="#Contacts" id="ContactosBtn">Contacto</a></li>
+      <li><a href="#Blog" id="BlogBtn">Noticias</a></li>
+      <li><a href="#Customers" id="ClientesBtn">Clientes</a></li>
     </ul>
-    <!-- Icon-->
-    <div class="header-icon">
-      <i class='bx bx-cart-alt'></i>
-      <i class='bx bx-search' id="search-icon">
-      </i>
-    </div>
-    <!--Searcg Box-->
-    <div class="search-icon">
-      <input type="search" name="" id="" placeholder="Buscar...">
-    </div>
-    <a href="#" class="carro ">
-      <img src="imagenes/cart.png" alt="">
-      <a href="#" class="carro ">
-        <img src="imagenes/lupa.png" alt="">
+    <div class="header-icon"><i class='bx bx-cart-alt'></i><i class='bx bx-search' id="search-icon"></i></div>
+    <div class="search-icon"><input type="search" name="" id="" placeholder="Buscar..."></div><a href="#"
+      class="carro"><img src="imagenes/cart.png" alt=""></a><a href="#" class="carro"><img src="imagenes/lupa.png"
+        alt=""></a>
   </header>
 
+
   <h1>adsad</h1>
+  <!-- This section of code sets up the Home section of a webpage  -->
   <section class="home" id="Home">
+    <!-- The padding-right and padding-left are set to create an adequate spacing necessary to display properly -->
     <div class="home-text" style="padding-right: 90px; padding-left: 5vw;">
       <h1>Unleash the <br>Beast</h1>
-      <p>Abre un lata de Monstruo Energy, la segunda bebida más energética, ya que solo nosotra version gringa nos
+      <!-- This paragraph contains information about Monstruo Energy  -->
+      <p style="font-size: large;">Abre un lata de Monstruo Energy, la segunda bebida más energética, ya que solo
+        nosotra version gringa nos
         supera. Es la combinación ideal de ingredientesy contiene la proporción adecuada para hacer el trabajo
         que sólo Monstruo puede. Monstruo tiene un sabor intenso pero suave. Atletas, músicos, anarquistas,
         estudihambres,
         guerreros de la carretera, rockeros, intelectuales, los modernos y a los motociclistas les encanta.
       </p>
+      <!-- Link to shop home -->
       <a href="#" class="btn">Comprar </a>
     </div>
 
     <div class="home-img" style="padding-left: 90px; padding-right: 90px;">
+      <!-- Image of Monstruo Energy drink  -->
       <img src="imagenes/m1.webp" alt="" width="150">
     </div>
   </section>
+
 
   <!--About-->
   <section class="about" id="About">
@@ -158,7 +143,8 @@
         <input type="email" name="email" id="" placeholder="E-mail" required>
         <input type="" placeholder="Direccion" required>
         <p></p>
-        <div style="padding-bottom: 10px;"><textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje" required>
+        <div style="padding-bottom: 10px;"><textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"
+            required>
           </textarea></div>
         <a href="#" class="btn" style="padding-top: 10px;">Entregar </a>
         <p></p>
@@ -168,6 +154,40 @@
       <img src="imagenes/logomonster.png">
     </div>
   </section>
+
+  <section class="Products" id="Blog">
+    <div class="heading">
+      <h2>NOTICIAS</h2>
+    </div>
+    <div class="products-container">
+      <div class="box" style="background: black;">
+        <img src="imagenes/n1.jpg" alt="">
+        <h3 style="color: #95D600;">Lewis Hamilton habla del<br> Futuro de la F1</h3>
+        <p style="color: #ffffff;">Lewis Hamilton ahora ha ganado seis de las ocho carreras de Fórmula Uno de esta
+          temporada y está
+          irrefutablemente en camino de defender su título mundial.</p>
+      </div>
+      <div class="box" style="background: black;">
+        <img src="imagenes/n2.jpg" alt="">
+        <h3 style="color: #95D600;">MXGP vuelve a la vida con el <br>Gran Premio de Argentina</h3>
+        <p style="color: #ffffff;">Seis meses puede parecer mucho tiempo. Para los fanáticos del motocross,
+          especialmente los de MXGP y aquellos que no están demasiado distraídos...</p>
+      </div>
+      <div class="box" style="background: black;">
+        <img src="imagenes/n3.jpg" alt="">
+        <h3 style="color: #95D600;">Joaquín Poli se quedó el primer puesto del Enduro de Verano</h3>
+        <p style="color: #ffffff;">Fueron tres días de carreras con gran convocatoria tanto de competidores nacionales e
+          internacionales. En total se inscribieron más de 1.050 participantes.</p>
+      </div>
+      <div class="box" style="background: black;">
+        <img src="imagenes/n4.jpg" alt="">
+        <h3 style="color: #95D600;">Una entrevista cercana y personal con el campeón mundial de pilotos de ​​F1 Lewis
+          Hamilton</h3>
+        <p style="color: #ffffff;">El actual campeón y batidor de record de F1 lewis Hamilton, nos cuenta sobre sus
+          inspiraciones, pasatiempos fuera de la pista y lo que el futuro le depara</p>
+      </div>
+  </section>
+
 </body>
 
 </html>
