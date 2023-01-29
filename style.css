@@ -243,9 +243,9 @@ header {
 .products-container .box .content span {
     padding: 0 1rem;
     color: var(--bg-color);
-    background: brown;
-    font-weight: 4px;
-    font-weight: 500;
+    background: #2E2E2E;
+    font-weight: 7px;
+    /* font-weight: 500; */
 }
 
 * {
