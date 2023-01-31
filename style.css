@@ -71,7 +71,7 @@ header {
 }
 
 .navbar a:hover {
-    background: var(--main-color); 
+    background: var(--main-color-light); 
     border-radius: 0.2rem;
 }
 
